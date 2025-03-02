@@ -1,27 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rekber - Jasapost - Top Up</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Tampilan Mobile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>REKBER - JASAPOST - TOP UP</h1>
-        <p>Waspada Link Tiruan. Link Asli hanya berusername: <b>"Itsuga"</b>. Selain itu clone.</p>
-        
-        <div class="button-container">
-            <a href="#" class="button whatsapp">WA REKBER (MC Langsung Buat Grup)</a>
-            <a href="#" class="button whatsapp">WA JASAPOST</a>
-            <a href="#" class="button whatsapp">WA TOPUP - JB Akun - Gift/Order Skin - Beli Akun</a>
-            <a href="#" class="button whatsapp">WA CUSTOMER SERVICE</a>
-            <a href="#" class="button whatsapp">WA JOKI RANK MLBB</a>
-            <a href="#" class="button">Itsugamarket - Top Up Game dan Joki Murah Proses Kilat</a>
-            <a href="#" class="button">Itsuga - Update Informasi dan Cek Akun Berbahaya</a>
-            <a href="#" class="button">ITSUGENK! | INFO ADMIN DAN STOK</a>
-            <a href="#" class="button">INSTAGRAM</a>
-        </div>
+        <h1>Halo, Dunia!</h1>
+        <p>Ini adalah tampilan web yang dapat dibuka di HP setelah diunduh.</p>
+        <button class="btn" onclick="closePopup()">Kembali ke Layar Utama</button>
     </div>
+    <script>
+        function closePopup() {
+            document.querySelector('.container').style.display = 'none';
+            document.body.style.background = 'transparent';
+        }
+    </script>
 </body>
 </html>
